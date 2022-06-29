@@ -1,3 +1,5 @@
+import $ from "jquery";
+
 class Code {
   names: string[] = [];
   message: string = "";
@@ -8,6 +10,7 @@ class Code {
   }
 
   getMessage() {
+    const app = $("#app");
     return this.message;
   }
 
